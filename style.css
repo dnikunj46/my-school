@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(35,35,85);
+}
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+h6{
+    font-size: 1.1rem;
+    color: rgb(24,24,40);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vh 8vh;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+nav img{
+    width: 50px;
+    cursor: pointer;
+}
+ nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+
+ }
+ nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+ }
+
+ nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21,21,104);
+    font-size: 16px;
+    transition: 0.5s ease-in;
+ }
+ nav .navigation ul li a:hover{
+    color:#fdc938;
+ }
+ #home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url(image/campus.JPG);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+ }
+ #home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+ }
+
+ #home p{
+    width: 50%;
+    color:#fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+#home .btn{
+margin-top:30px ;
+}
+#home a.blue
+{
+    color: #fff;
+    background-color: aqua;
+}
+#home a.blue:hover{
+    color: aqua;
+    background-color:#fff; 
+
+}
+#home a.yellow
+{
+    color: #fff;
+    background-color: rgb(255, 255, 0);
+}
+#home a.yellow:hover
+{
+    color:  rgb(255, 255, 0);
+    background-color:#fff; 
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 100;
+    border-radius: 5px;
+}
+
+#features{
+    padding: 5vh 8vh 0 8vh;
+    text-align: center;
+}
+#features .fea-box{
+    background: #f9f9ff;
+    text-align: start;
+}
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: red;
+}
+#features .fea-box h3{
+    font-size: 1.3rem;
+    color: rgb(132, 0, 255);
+    font-weight: 600;
+    padding: 13px 0 7px 0 ;
+}
+#features .fea-box p{
+    font-size: 1rem;
+    color: rgb(132, 0, 255);
+    font-weight: 400;
+}
+#features .fea-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#course{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+    position: relative;
+}
+#course .courses{
+    text-align: start;
+    background: #f9f9ff;
+    height: 100%;
+}
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;   
+}
+
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i{
+    color: rgb(198, 106, 15);
+    font-size: 0.9rem;
+}
+#course .courses .cost{
+    color: rgb(82, 14, 23);
+    font-size: 0.9rem;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: bisque;
+    position: absolute;
+    right: 150px;
+    /* bottom: 100px; */
+}
+#registration{
+    padding: 6vw 8vw 6vw 8vh;
+    background-image:linear-gradient(rgba(99,112,168,0.5),rgba(91,81,232,0.5)),url(image/campus.JPG); 
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#registration .remainder{
+    color: #fff;
+
+}
+#registration .remainder h1{
+    color: #fff;
+    
+}
+#registration .remainder .time{
+    display: flex;
+    margin-top: 40px;
+    
+}
+#registration .remainder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: #757373;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31,34,135,0.57);
+    border-radius: 5px;
+    margin:0 5px 10px 5px;
+    border: 2px solid white;
+    font-size: 10px;
+}
+
+#registration .form{
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.27);
+}
+
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid ;
+}
+#registration .form .btn{
+    margin-top: 20px;
+}
+
+#registration .form a
+{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 100;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(255, 255, 0);
+}
+#registration .form a:hover
+{
+    color:  rgb(255, 255, 0);
+    background-color:#fff; 
+}
+#registration .form input::placeholder{
+    color: rgb(218, 131, 16);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#experts{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#experts .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+#experts .expert-box .profile{
+    background: #fafaf1;
+    padding: 30px 10px;
+
+}
+.pro-link{
+    margin-top: 10px;
+}
+.pro-link i{
+    padding: 10px 10px;
+    border: 1px solid;
+    cursor: pointer;
+}
+.pro-link i:hover{
+    background: #fdc938;
+    border: 1px solid;
+    cursor: pointer;
+}
+footer{
+padding: 9vw;
+background-color: #fdc938;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+footer h3{
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 20px;
+} 
